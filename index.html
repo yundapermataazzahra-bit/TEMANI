@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TEMANI – TBC Kebal Obat Bukanlah Akhir</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- SAPAAN YUREKA -->
+<section id="intro" class="intro">
+  <span class="bact b1"></span><span class="bact b2"></span><span class="bact b3"></span>
+  <div class="intro-inner">
+    <div class="yureka" aria-hidden="true">
+      <svg viewBox="0 0 200 230" width="200" height="230">
+        <g class="arm-wave"><ellipse cx="168" cy="110" rx="14" ry="30" fill="#E8452C" transform="rotate(-25 168 110)"/><circle cx="178" cy="82" r="11" fill="#FFD9B8"/></g>
+        <ellipse cx="32" cy="130" rx="14" ry="28" fill="#E8452C" transform="rotate(20 32 130)"/>
+        <ellipse cx="75" cy="205" rx="22" ry="14" fill="#6B3F2A"/><ellipse cx="125" cy="205" rx="22" ry="14" fill="#6B3F2A"/>
+        <ellipse cx="100" cy="125" rx="68" ry="78" fill="#F26B3A"/>
+        <ellipse cx="100" cy="150" rx="44" ry="50" fill="#FFB27A"/>
+        <path d="M100 118 l32 12 v26 q0 24 -32 38 q-32 -14 -32 -38 v-26z" fill="#5BB8E8" stroke="#fff" stroke-width="4"/>
+        <path d="M100 168 c-14 -10 -18 -16 -12 -22 c4 -4 9 -2 12 3 c3 -5 8 -7 12 -3 c6 6 2 12 -12 22z" fill="#FF9EB5"/>
+        <g class="blink"><circle cx="76" cy="95" r="12" fill="#fff"/><circle cx="124" cy="95" r="12" fill="#fff"/><circle cx="78" cy="97" r="6" fill="#3b2216"/><circle cx="122" cy="97" r="6" fill="#3b2216"/></g>
+        <circle cx="58" cy="115" r="8" fill="#FF9EB5" opacity=".8"/><circle cx="142" cy="115" r="8" fill="#FF9EB5" opacity=".8"/>
+        <path d="M84 118 q16 16 32 0" stroke="#3b2216" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M70 52 q30 -34 60 0" stroke="#6B3F2A" stroke-width="8" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="bubble">
+      <p id="typed" class="typed" aria-live="polite"></p>
+      <form id="idForm" class="idform" hidden>
+        <p>Boleh kenalan? Isi namamu dulu ya (tidak disimpan, hanya untuk sapaan).</p>
+        <label>Nama panggilan <input id="nama" type="text" maxlength="20" placeholder="contoh: Sari" autocomplete="off"></label>
+        <label>Umur <input id="umur" type="number" min="1" max="120" placeholder="contoh: 35"></label>
+        <div class="btnrow">
+          <button type="submit" class="btn">Kenalan dengan YUREKA</button>
+          <button type="button" id="skip" class="btn ghost">Lewati</button>
+        </div>
+      </form>
+      <p id="greet" class="greet" hidden></p>
+      <a id="mulai" href="#bagian1" class="btn big" hidden>Ayo mulai belajar ↓</a>
+    </div>
+  </div>
+</section>
+
+<header class="hero">
+  <h1>TBC Kebal Obat Bukanlah Akhir</h1>
+  <p class="sub">Bisa disembuhkan. <b>TEMANI</b> sampai tuntas.</p>
+</header>
+
+<nav class="nav" aria-label="Navigasi">
+  <a href="#bagian1">1. Kenali</a><a href="#bagian2">2. Pengobatan</a><a href="#bagian3">3. TEMANI</a>
+</nav>
+
+<main>
+<!-- BAGIAN 1 -->
+<section id="bagian1" class="sec">
+  <h2 class="sec-title"><span class="tag">Bagian 1</span> Kenali TBC kebal obat</h2>
+
+  <article class="card def">
+    <h3>Apa itu TBC kebal obat (TBC RO)?</h3>
+    <p>Penyakit menular karena kuman TBC (<i>Mycobacterium tuberculosis</i>) yang <b>tidak bisa lagi dibunuh</b> dengan obat TBC biasa (TBC sensitif obat). Karena itu pasien harus diobati dengan <b>obat TBC RO</b>.</p>
+    <div class="bacteria-demo">
+      <div class="bx"><svg viewBox="0 0 90 90" width="90"><circle cx="45" cy="45" r="30" fill="#FF9EB5"/><circle cx="36" cy="40" r="4" fill="#3b2216"/><circle cx="54" cy="40" r="4" fill="#3b2216"/><path d="M36 54q9 7 18 0" stroke="#3b2216" stroke-width="3" fill="none"/></svg><small>Kuman TBC biasa<br>mempan obat</small></div>
+      <span class="arrow">➜</span>
+      <div class="bx"><svg viewBox="0 0 90 90" width="90"><circle cx="45" cy="45" r="30" fill="#E8452C"/><path d="M30 34l12 5m18-5l-12 5" stroke="#3b2216" stroke-width="4" stroke-linecap="round"/><circle cx="36" cy="44" r="3.5" fill="#fff"/><circle cx="54" cy="44" r="3.5" fill="#fff"/><path d="M36 58q9-6 18 0" stroke="#3b2216" stroke-width="3" fill="none"/><path d="M8 28 q-4 22 8 40 l14-8 q-8-14-6-26z" fill="#5BB8E8" stroke="#fff" stroke-width="2"/></svg><small>Kuman TBC kebal obat<br>punya "perisai"</small></div>
+    </div>
+    <p class="key">🔑 TBC RO <b>bisa disembuhkan</b> bila pengobatan dilakukan dengan <b>3T</b>: tepat waktu, tepat cara, tepat dosis.</p>
+  </article>
+
+  <article class="card epi">
+    <h3>Seberapa besar masalahnya di Indonesia?</h3>
+    <div class="epi-grid">
+      <div class="lungwrap">
+        <svg class="lung" viewBox="0 0 220 220" aria-hidden="true">
+          <path d="M110 30 v70" stroke="#6B3F2A" stroke-width="10" stroke-linecap="round"/>
+          <path d="M110 100 q-20 10 -30 30 M110 100 q20 10 30 30" stroke="#6B3F2A" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <g class="breathe">
+            <path d="M98 70 C60 62 24 112 30 164 C34 192 66 196 88 176 C100 164 100 120 98 70z" fill="#FF9EB5"/>
+            <path d="M122 70 C160 62 196 112 190 164 C186 192 154 196 132 176 C120 164 120 120 122 70z" fill="#FF9EB5"/>
+            <circle cx="64" cy="130" r="9" fill="#E8452C"/><circle cx="150" cy="150" r="7" fill="#E8452C"/><circle cx="72" cy="158" r="5" fill="#E8452C"/>
+          </g>
+        </svg>
+        <span class="mini m1">🦠</span><span class="mini m2">🦠</span><span class="mini m3">💊</span>
+      </div>
+      <div class="statbox">
+        <p class="big"><span id="count" data-to="7.3">0</span>%</p>
+        <p>Dari seluruh penderita TBC kebal obat di dunia yang <b>belum memulai pengobatan pada 2024</b>, sekitar 7,3% ada di <b>Indonesia</b>.</p>
+        <p class="rank">🏅 Peringkat 3 dunia</p>
+        <small>Sumber: WHO Global TB Report 2025</small>
+      </div>
+    </div>
+    <p class="dotlabel">Bayangkan 100 orang di dunia yang belum diobati. Sekitar 7 di antaranya ada di Indonesia:</p>
+    <div id="dots" class="dots" role="img" aria-label="100 titik, sekitar 7 berwarna merah"></div>
+    <p class="note">Karena itu mengenali gejala dan segera periksa sangat penting.</p>
+  </article>
+
+  <article class="card gejala">
+    <h3>Apa gejalanya? Cek dulu yuk</h3>
+    <p>Gejala TBC RO <b>sama dengan TBC biasa</b>, jadi tidak bisa dibedakan dari gejala saja. Centang yang kamu atau keluargamu alami:</p>
+    <div class="checks" id="checks">
+      <label><input type="checkbox"> 😷 Batuk berkepanjangan</label>
+      <label><input type="checkbox"> 🤒 Demam</label>
+      <label><input type="checkbox"> ⚖️ Berat badan turun</label>
+      <label><input type="checkbox"> 🍚 Nafsu makan berkurang</label>
+      <label><input type="checkbox"> 🌙 Berkeringat malam tanpa aktivitas</label>
+      <label><input type="checkbox"> 😮‍💨 Sesak napas tanpa nyeri dada</label>
+      <label><input type="checkbox"> 🔘 Kelenjar getah bening di leher/ketiak membesar</label>
+    </div>
+    <div id="hasil" class="hasil">Centang gejala di atas untuk melihat saran.</div>
+    <p class="note">Catatan: orang dengan daya tahan tubuh lemah (misal ODHIV) kadang <b>tidak batuk</b>. Alat ini bukan diagnosis.</p>
+  </article>
+
+  <article class="card skrin">
+    <h3>Bagaimana skrining dan pemeriksaannya?</h3>
+    <ol class="steps">
+      <li><b>Datang ke puskesmas / fasyankes</b> bila ada gejala atau pernah kontak erat dengan pasien TBC RO.</li>
+      <li><b>Tes Cepat Molekuler (TCM)</b> memeriksa dahak. Dahak yang baik (kental, bukan air liur) membuat hasil lebih tepat.</li>
+      <li><b>Uji kepekaan obat</b> memastikan apakah kuman kebal obat.</li>
+      <li><b>Pemeriksaan awal</b> sebelum berobat: rontgen dada, darah lengkap, EKG, tes kehamilan pada wanita usia subur.</li>
+    </ol>
+    <h4>Siapa yang berisiko lebih tinggi?</h4>
+    <div class="chips"><span>👥 Tertular dari pasien TBC RO</span><span>💊 Pernah berobat TBC tidak tuntas / tidak sesuai standar</span><span>🛡️ Daya tahan tubuh rentan (ODHIV, diabetes, dll.)</span></div>
+    <p class="note">Keluarga dan kontak erat juga perlu diperiksa. Bila tidak bergejala, bisa diberi terapi pencegahan (TPT) di fasyankes.</p>
+  </article>
+</section>
+
+<!-- BAGIAN 2 -->
+<section id="bagian2" class="sec alt">
+  <h2 class="sec-title"><span class="tag">Bagian 2</span> Lama pengobatan dan hambatan</h2>
+
+  <article class="card lama">
+    <h3>Berapa lama pengobatannya?</h3>
+    <p>Pengobatan TBC RO <b>jauh lebih panjang</b> dari TBC biasa: sekitar <b>6 sampai 20 bulan</b>, tergantung paduan obat yang ditentukan dokter. Geser untuk membayangkan perjalanannya:</p>
+    <input id="bulan" type="range" min="1" max="20" value="6" aria-label="Bulan pengobatan">
+    <div class="track"><div id="fill" class="fill"></div><span id="walker" class="walker">🚶</span></div>
+    <p id="bulanTxt" class="bulantxt"></p>
+    <p class="key">🔑 Hasil dahak negatif <b>belum berarti</b> semua kuman mati. Obat tetap ditelan sampai tuntas sesuai pertimbangan dokter.</p>
+  </article>
+
+  <article class="card hambatan">
+    <h3>Kenapa banyak yang sulit patuh? Ini bukan salah pasien</h3>
+    <p>Ketuk kartu untuk melihat solusinya:</p>
+    <div class="flips">
+      <button class="flip"><span class="f-front">🤢 Efek samping<br><small>mual, lelah, kulit gatal, jantung berdebar</small></span><span class="f-back">Tidak apa-apa melapor! Efek samping bisa ditangani. Jangan berhenti minum obat sendiri.</span></button>
+      <button class="flip"><span class="f-front">⏳ Durasi panjang<br><small>berbulan-bulan tiap hari</small></span><span class="f-back">Pecah jadi target kecil: satu hari, satu bulan. Pasien tetap bisa bekerja dan beraktivitas.</span></button>
+      <button class="flip"><span class="f-front">🚌 Biaya transport<br><small>bolak-balik ke fasyankes</small></span><span class="f-back">Tanyakan petugas atau pendamping soal bantuan biaya dan opsi pemantauan yang lebih dekat.</span></button>
+      <button class="flip"><span class="f-front">😔 Stigma dan kesepian<br><small>dijauhi, malu, merasa sendiri</small></span><span class="f-back">TBC RO bisa mengenai siapa saja dan bisa sembuh. Libatkan orang yang kamu percaya dan sesama penyintas.</span></button>
+      <button class="flip"><span class="f-front">📦 Obat sempat kosong<br><small>ketersediaan di layanan</small></span><span class="f-back">Segera sampaikan ke petugas dan pendamping agar dicarikan solusi, jangan diam di rumah.</span></button>
+    </div>
+  </article>
+</section>
+
+<!-- BAGIAN 3 -->
+<section id="bagian3" class="sec">
+  <h2 class="sec-title"><span class="tag">Bagian 3</span> TEMANI: solusi supaya tuntas</h2>
+  <p class="lead">Ketuk tiap huruf untuk membaca penjelasannya.</p>
+  <div class="temani" id="temani">
+    <div class="tcard open" data-c="#E8452C">
+      <button class="thead"><span class="letter">T</span><span><b>Tiga T</b><small>Tepat waktu, tepat cara, tepat dosis</small></span></button>
+      <div class="tbody"><p><b>Tepat waktu</b>: minum obat di jam yang sama setiap hari. <b>Tepat cara</b>: sesuai petunjuk petugas. <b>Tepat dosis</b>: jumlah sesuai resep, tidak dikurangi atau ditambah sendiri. Hasil dahak negatif bukan alasan berhenti.</p><p class="tip">💡 Pasang alarm harian atau kalender berulang di ponsel.</p></div>
+    </div>
+    <div class="tcard" data-c="#F26B3A">
+      <button class="thead"><span class="letter">E</span><span><b>Efek samping</b><small>Lapor, jangan berhenti sendiri</small></span></button>
+      <div class="tbody"><p>Obat TBC RO bisa menimbulkan efek samping: mudah lelah atau pucat, mual muntah, perubahan warna kulit, gatal, kesemutan, nyeri sendi, jantung berdebar, atau gangguan penglihatan (sulit membaca, sulit membedakan warna, pandangan buram). Sampaikan segera ke petugas atau pendamping agar ditatalaksana.</p><p class="tip">💡 Gangguan penglihatan: segera ke fasyankes TBC RO.</p></div>
+    </div>
+    <div class="tcard" data-c="#FF9EB5">
+      <button class="thead"><span class="letter">M</span><span><b>Mendampingi</b><small>Keluarga, kader, sesama penyintas</small></span></button>
+      <div class="tbody"><p>Dukungan orang sekitar sangat menentukan keberhasilan. <b>Keluarga</b>: ingatkan jadwal obat dan dengarkan kondisi emosinya. <b>Teman sebaya</b>: sesama pasien bisa saling mengingatkan dan bertukar cara mengatasi efek samping. <b>Pendamping dan tenaga kesehatan</b> selalu siap membantu. TBC RO menular lewat udara dan percikan ludah, <b>tidak</b> lewat peralatan makan.</p></div>
+    </div>
+    <div class="tcard" data-c="#5BB8E8">
+      <button class="thead"><span class="letter">A</span><span><b>Akses obat dan bantuan</b><small>Pengobatan standar tersedia di layanan</small></span></button>
+      <div class="tbody"><p>Pengobatan sesuai standar tersedia di rumah sakit, balai kesehatan, dan puskesmas penyedia layanan TBC RO. Daftar layanan ada di <b>laportbc.id</b>. Tanyakan ke petugas soal hak pasien dan bantuan biaya. Bila pindah domisili atau terkena bencana, segera lapor agar pengobatan tidak terputus.</p></div>
+    </div>
+    <div class="tcard" data-c="#6B3F2A">
+      <button class="thead"><span class="letter">N</span><span><b>Nyalakan pantauan</b><small>Periksa rutin setiap bulan</small></span></button>
+      <div class="tbody"><p>Setiap bulan lakukan pemantauan di fasyankes tempat berobat: berat badan naik, keluhan berkurang, rontgen dada, pemeriksaan laboratorium dan dahak. Tanyakan selalu kemajuan pengobatanmu ke petugas.</p></div>
+    </div>
+    <div class="tcard" data-c="#E8452C">
+      <button class="thead"><span class="letter">I</span><span><b>Ingat kontrol lanjutan</b><small>Tetap kontrol setelah dinyatakan tuntas</small></span></button>
+      <div class="tbody"><p>Setelah pengobatan tuntas, tetap datang untuk kontrol lanjutan sesuai jadwal dari petugas agar kesembuhan terjaga. Jadwal tepatnya ditentukan fasyankes.</p></div>
+    </div>
+  </div>
+
+  <article class="card game">
+    <h3>🎮 Main kuis TEMANI</h3>
+    <p>Uji pemahamanmu sambil bermain. Kamu bisa naik tangga dukungan TEMANI!</p>
+    <a class="btn big" href="https://quiz.zep.us/id/play/AGGdVO" target="_blank" rel="noopener">Main sekarang</a>
+  </article>
+</section>
+</main>
+
+<footer>
+  <p><b>Penting:</b> situs ini hanya edukasi, bukan pengganti dokter. Jangan mengubah dosis atau berhenti obat tanpa petunjuk petugas kesehatan.</p>
+  <p>Sumber: Buku Saku Pasien Tuberkulosis Resistan Obat, Kemenkes RI 2024; WHO Global TB Report 2025.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
