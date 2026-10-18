@@ -153,32 +153,41 @@
     ] }
   ];
 
-  function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html !== undefined) e.innerHTML = html; return e; }
+  function mk(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html !== undefined) e.innerHTML = html; return e; }
+  var INTRO = {
+    T: 'Kunci kesembuhan TBC RO: pengobatan dilakukan dengan 3T, yaitu tepat waktu, tepat cara, dan tepat dosis.',
+    E: 'Obat TBC RO bisa menimbulkan efek samping, dari ringan sampai berat, dan berbeda pada tiap pasien. Selalu sampaikan keluhan ke petugas kesehatan atau pendamping agar bisa ditatalaksana.',
+    M: 'Dukungan dari keluarga dan lingkungan sangat penting bagi keberhasilan pengobatan TBC RO. Kamu tidak perlu menjalaninya sendirian.',
+    A: 'Pengobatan sesuai standar tersedia di layanan TBC RO. Kenali ke mana harus datang dan kepada siapa harus melapor.',
+    N: 'Pemantauan rutin setiap bulan menunjukkan apakah pengobatanmu berjalan baik.',
+    I: 'Pengobatan tuntas bukan akhir tanggung jawab: tetap kontrol, lindungi orang tersayang, dan jaga tubuh.'
+  };
   var root = $('#temani');
   TEMANI.forEach(function (d, k) {
-    var card = el('div', 'tcard' + (k === 0 ? ' open' : ''));
-    var head = el('button', 'thead', '<span class="letter" style="--c:' + d.c + '">' + d.l + '</span><span><b>' + d.t + '</b><small>' + d.s + '</small></span>');
+    var card = mk('div', 'tcard' + (k === 0 ? ' open' : ''));
+    var head = mk('button', 'thead', '<span class="letter" style="--c:' + d.c + '">' + d.l + '</span><span><b>' + d.t + '</b><small>' + d.s + '</small></span>');
     head.type = 'button';
     head.addEventListener('click', function () { card.classList.toggle('open'); });
-    var body = el('div', 'tbody');
+    var body = mk('div', 'tbody');
+    body.appendChild(mk('p', 'lede', INTRO[d.l]));
     if (d.tl) {
-      body.appendChild(el('p', 'pick', 'Lampu lalu lintas efek samping: kenali tingkat keluhanmu'));
-      var t = el('div', 'tl');
+      body.appendChild(mk('p', 'pick', 'Lampu lalu lintas efek samping: kenali tingkat keluhanmu'));
+      var t = mk('div', 'tl');
       TL.forEach(function (c) {
-        t.appendChild(el('div', c.k, '<h5>' + c.h + '<small>' + c.d + '</small></h5><ul>' + c.l.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>'));
+        t.appendChild(mk('div', c.k, '<h5>' + c.h + '<small>' + c.d + '</small></h5><ul>' + c.l.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>'));
       });
       body.appendChild(t);
-      body.appendChild(el('p', 'note', 'Keluhanmu tidak ada di daftar? Tetap sampaikan ke petugas atau pendamping.'));
+      body.appendChild(mk('p', 'note', 'Keluhanmu tidak ada di daftar? Tetap sampaikan ke petugas atau pendamping.'));
     }
-    body.appendChild(el('p', 'pick', d.tl ? 'Pilih keluhan untuk melihat cara mengatasinya:' : 'Pilih topik:'));
-    var chips = el('div', 'subchips'), panel = el('div', 'panel'), btns = [];
+    body.appendChild(mk('p', 'pick', d.tl ? 'Pilih keluhan untuk melihat cara mengatasinya:' : 'Pilih topik:'));
+    var chips = mk('div', 'subchips'), panel = mk('div', 'panel'), btns = [];
     function show(j) {
       var it = d.items[j];
       btns.forEach(function (b, x) { b.classList.toggle('on', x === j); });
       panel.innerHTML = '<h4>' + it.i + ' ' + it.t + '</h4><ul>' + it.b.map(function (x) { return '<li>' + x + '</li>'; }).join('') + '</ul>' + (it.w ? '<p class="tip warn">⚠️ ' + it.w + '</p>' : '') + (it.x || '');
     }
     d.items.forEach(function (it, j) {
-      var b = el('button', 'chip', it.i + ' ' + it.t); b.type = 'button';
+      var b = mk('button', 'chip', it.i + ' ' + it.t); b.type = 'button';
       b.addEventListener('click', function () { show(j); });
       btns.push(b); chips.appendChild(b);
     });
